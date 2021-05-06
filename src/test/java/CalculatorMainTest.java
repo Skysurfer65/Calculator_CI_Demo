@@ -12,6 +12,7 @@ class CalculatorMainTest extends TempCalculationsTest {
     static void beforeAll(){
         packageTest = new CalculatorMainTest();
     }
+
     //Test arithmetic
     @Test
     void addition(){
@@ -33,5 +34,4 @@ class CalculatorMainTest extends TempCalculationsTest {
         packageTest.getInputString();
         packageTest.parseInput();
     }
-
 }

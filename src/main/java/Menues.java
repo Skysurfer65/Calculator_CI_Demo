@@ -61,4 +61,14 @@ public class Menues {
         text+= "degrees of Celsius\n";
         System.out.print(text);
     }
+    void cosmeticDelayOfDisplay(int seconds){
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException ie) {
+            Thread.currentThread().interrupt();
+        }
+        //Cosmetic end line of calculation
+        text = "*****************************************";
+        System.out.println(text);
+    }
 }

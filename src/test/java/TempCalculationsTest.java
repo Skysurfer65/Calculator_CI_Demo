@@ -9,9 +9,11 @@ class TempCalculationsTest extends MultiplicationTest {
 
     @Test
     void cToFResult() {
-        //Asserts
+        //Act
         //Due to using doubles program will round off to one decimal and therefore delta value
         double delta = 0.049;
+
+        //Asserts
         assertEquals(32, tempCalculationsTest.cToFResult(0),delta, "0 degree C to F");
         assertEquals(212, tempCalculationsTest.cToFResult(100), delta,"100 degrees C to F");
         assertEquals( 77, tempCalculationsTest.cToFResult(25), delta,"25 degrees C to F");
@@ -20,9 +22,11 @@ class TempCalculationsTest extends MultiplicationTest {
 
     @Test
     void fToCResult() {
-        //Asserts
+        //Act
         //Due to using doubles program will round off to one decimal and therefore delta value
         double delta = 0.049;
+
+        //Asserts
         assertEquals(-17.8, tempCalculationsTest.fToCResult(0),delta, "0 degree F to C");
         assertEquals(37.8, tempCalculationsTest.fToCResult(100), delta, "100 degrees F to C");
         assertEquals( -3.9, tempCalculationsTest.fToCResult(25), delta, "25 degrees F to C");

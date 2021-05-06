@@ -10,7 +10,7 @@ public class CalculatorMain {
         boolean valid = true;
         do {
             calculator.menu.options();
-            calculator.value = calculator.input.getInputString(System.in).toUpperCase();
+            calculator.value = calculator.input.getInputString().toUpperCase();
             switch (calculator.value){
                 case "+":
                     Addition addition = new Addition();

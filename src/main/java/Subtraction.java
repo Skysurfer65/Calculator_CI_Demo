@@ -6,7 +6,7 @@ public class Subtraction {
         calculator.menu.subtraction();
 
         //Get user inputs
-        double[] numbers = calculator.input.getUserInputs(calculator, System.in);
+        double[] numbers = calculator.input.getUserInputs(calculator);
 
         //Round off to two decimals and present answer
         DecimalFormat df = new DecimalFormat("0.00");
@@ -14,13 +14,7 @@ public class Subtraction {
                 +df.format(subResult(numbers[0], numbers[1])));
         System.out.println("Rounded off to two decimals");
         //Delay result display
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-        }
-        //Cosmetic end of calculation line
-        System.out.println("*****************************************");
+        calculator.menu.cosmeticDelayOfDisplay(3);
     }
     //For arithmetic testing purposes
     double subResult(double a, double b){

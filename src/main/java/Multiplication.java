@@ -4,19 +4,13 @@ public class Multiplication {
         calculator.menu.multiplication();
 
         //Get user inputs
-        double[] numbers = calculator.input.getUserInputs(calculator, System.in);
+        double[] numbers = calculator.input.getUserInputs(calculator);
 
         //Present the result
         System.out.println("\nThe product of "+numbers[0]+" and "+numbers[1]+" is "
                 + multiResult(numbers[0], numbers[1])+"\n");
         //Delay result display
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-        }
-        //Cosmetic end line of calculation
-        System.out.println("*****************************************");
+        calculator.menu.cosmeticDelayOfDisplay(3);
     }
     //For arithmetic testing purposes
     double multiResult(double a, double b){

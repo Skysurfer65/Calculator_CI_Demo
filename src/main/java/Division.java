@@ -6,7 +6,7 @@ public class Division {
         calculator.menu.division();
 
         //Get user inputs
-        double[] numbers = calculator.input.getUserInputs(calculator, System.in);
+        double[] numbers = calculator.input.getUserInputs(calculator);
 
         //Round off quota to two decimals and display
         DecimalFormat df = new DecimalFormat("0.00");
@@ -14,13 +14,7 @@ public class Division {
                 +df.format(divResult(numbers[0], numbers[1])));
         System.out.println("Rounded off to two decimals\n");
         //Delay result display
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-        }
-        //Cosmetic end line of calculation
-        System.out.println("*****************************************");
+        calculator.menu.cosmeticDelayOfDisplay(3);
     }
     //For arithmetic testing purposes
     double divResult(double a, double b) { return a / b; }

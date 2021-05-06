@@ -12,7 +12,7 @@ public class TempCalculations {
         do {
             System.out.print("Enter degrees of Celsius: ");
             try {
-                celsius = calculator.input.parseInput(System.in);
+                celsius = calculator.input.parseInput();
                 valid = true;
             } catch (Exception e){
                 calculator.menu.invalidInputs();
@@ -25,13 +25,7 @@ public class TempCalculations {
         System.out.println("\n"+celsius+" degrees Celsius is equal to "
                 +df.format(cToFResult(celsius))+" degrees Fahrenheit\n");
         //Delay result display
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-        }
-        //Cosmetic end line
-        System.out.println("*****************************************");
+        calculator.menu.cosmeticDelayOfDisplay(3);
     }
     //For arithmetic testing purposes
     double cToFResult(double celsius){
@@ -48,7 +42,7 @@ public class TempCalculations {
         do {
             System.out.print("Enter degrees of Fahrenheit: ");
             try {
-                fahrenheit = calculator.input.parseInput(System.in);
+                fahrenheit = calculator.input.parseInput();
                 valid = true;
             } catch (Exception e){
                 calculator.menu.invalidInputs();
@@ -61,13 +55,7 @@ public class TempCalculations {
         System.out.println("\n"+fahrenheit+" degrees Fahrenheit is equal to "
                 +df.format(fToCResult(fahrenheit))+" degrees Celsius\n");
         //Delay result display
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-        }
-        //Cosmetic end line
-        System.out.println("*****************************************");
+        calculator.menu.cosmeticDelayOfDisplay(3);
     }
     //For arithmetic testing purposes
     double fToCResult(double fahrenheit){
