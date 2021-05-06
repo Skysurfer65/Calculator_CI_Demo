@@ -1,6 +1,8 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,10 +42,11 @@ class InputTest {
     }
 
     @Test
+    @Disabled
     void getUserInputs(){
-        //double[] numbers;
-        //numbers = inputTest.getUserInputs(new CalculatorMain(), new ByteArrayInputStream("25\n".getBytes()));
-        //assertEquals(25, numbers[0]);
+        double[] numbers;
+        numbers = inputTest.getUserInputs(new CalculatorMain(), new ByteArrayInputStream("1\n".getBytes()));
+        //assertEquals(1, numbers[0]);
         //Exception handling
         //numbers = inputTest.getUserInputs(new CalculatorMain(), new ByteArrayInputStream("1\n".getBytes()));
         //assertFalse(inputTest.valid);
