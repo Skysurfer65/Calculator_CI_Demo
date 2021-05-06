@@ -25,7 +25,7 @@ public class TempCalculations {
         System.out.println("\n"+celsius+" degrees Celsius is equal to "
                 +df.format(cToFResult(celsius))+" degrees Fahrenheit\n");
         //Delay result display
-        calculator.menu.cosmeticDelayOfDisplay(3);
+        calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
     double cToFResult(double celsius){
@@ -55,7 +55,7 @@ public class TempCalculations {
         System.out.println("\n"+fahrenheit+" degrees Fahrenheit is equal to "
                 +df.format(fToCResult(fahrenheit))+" degrees Celsius\n");
         //Delay result display
-        calculator.menu.cosmeticDelayOfDisplay(3);
+        calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
     double fToCResult(double fahrenheit){

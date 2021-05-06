@@ -14,7 +14,7 @@ public class Subtraction {
                 +df.format(subResult(numbers[0], numbers[1])));
         System.out.println("Rounded off to two decimals");
         //Delay result display
-        calculator.menu.cosmeticDelayOfDisplay(3);
+        calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
     double subResult(double a, double b){

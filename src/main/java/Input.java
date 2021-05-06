@@ -44,7 +44,7 @@ public class Input {
                 valid = false;
             }
         }while(!valid);
-        double[] numbers = {a, b};
-        return numbers;
+
+        return new double[]{a, b};
     }
 }

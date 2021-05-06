@@ -31,6 +31,6 @@ class DivisionTest extends SubtractionTest {
         divZero = divisionTest.divResult(10, 0);
         assertEquals(Double.POSITIVE_INFINITY, divZero);
         divZero = divisionTest.divResult(-10, 0);
-        assertTrue(divZero == Double.NEGATIVE_INFINITY);
+        assertEquals(Double.NEGATIVE_INFINITY, divZero);
     }
 }

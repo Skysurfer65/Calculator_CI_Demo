@@ -61,9 +61,9 @@ public class Menues {
         text+= "degrees of Celsius\n";
         System.out.print(text);
     }
-    void cosmeticDelayOfDisplay(int seconds){
+    void cosmeticDelayOfDisplay(){
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(3 * 1000);
         } catch (InterruptedException ie) {
             Thread.currentThread().interrupt();
         }

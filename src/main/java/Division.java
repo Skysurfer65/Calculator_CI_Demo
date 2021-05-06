@@ -14,7 +14,7 @@ public class Division {
                 +df.format(divResult(numbers[0], numbers[1])));
         System.out.println("Rounded off to two decimals\n");
         //Delay result display
-        calculator.menu.cosmeticDelayOfDisplay(3);
+        calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
     double divResult(double a, double b) { return a / b; }

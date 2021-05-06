@@ -13,7 +13,7 @@ public class Addition {
         System.out.println("\nThe sum of "+numbers[0]+" and "+numbers[1]+" is "
                 +df.format(addResult(numbers[0], numbers[1]))+"\n");
         //Delay display of result
-        calculator.menu.cosmeticDelayOfDisplay(3);
+        calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
     double addResult(double a, double b){

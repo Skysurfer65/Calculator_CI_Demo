@@ -10,7 +10,7 @@ public class Multiplication {
         System.out.println("\nThe product of "+numbers[0]+" and "+numbers[1]+" is "
                 + multiResult(numbers[0], numbers[1])+"\n");
         //Delay result display
-        calculator.menu.cosmeticDelayOfDisplay(3);
+        calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
     double multiResult(double a, double b){
