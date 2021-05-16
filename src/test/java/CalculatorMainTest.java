@@ -13,7 +13,7 @@ class CalculatorMainTest extends TempCalculationsTest {
         packageTest = new CalculatorMainTest();
     }
 
-    //Test arithmetic
+    //Test arithmetics
     @Test
     void addition(){
         packageTest.addResult();
