@@ -1,6 +1,7 @@
 import java.text.DecimalFormat;
 
 public class Addition {
+
     void addition(CalculatorMain calculator) {
         //Menu addition
         calculator.menu.addition();

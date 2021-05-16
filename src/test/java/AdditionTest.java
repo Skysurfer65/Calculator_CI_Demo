@@ -1,8 +1,10 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
+import org.junit.contrib.java.lang.system.SystemOutRule;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class AdditionTest extends InputTest {
     //Class variables and objects
@@ -29,5 +31,30 @@ class AdditionTest extends InputTest {
         assertEquals(100, additionTest.addResult(easterEgg, 58), delta, "Test with easter egg" );
 
         inputTest.scan = old;
+    }
+
+    @Test
+    void additionMenu(){
+        //Arrange
+        //additionTest = new Addition();
+        //Scanner old = inputTest.scan;
+        CalculatorMain calculatorTest = new CalculatorMain();
+        SystemOutRule systemOutLog = new SystemOutRule().enableLog();
+
+
+        //Act
+
+        calculatorTest.menu.addition();
+        assertFalse(systemOutLog.getLog().contains("Addition"));
+        //inputTest.scan = new Scanner(new ByteArrayInputStream("MARCUS\n42\n".getBytes()));
+
+        //Asserts
+
+        //System.exit(1);
+        //assertEquals("hello world", systemOutLog.getLog());
+        //assertEquals(42, additionTest.numbers[0], "Checking MARCUS");
+        //assertEquals(42, additionTest.numbers[1], "Checking second input");
+
+        //inputTest.scan = old;
     }
 }
