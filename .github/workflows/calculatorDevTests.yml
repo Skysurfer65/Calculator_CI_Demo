@@ -12,9 +12,9 @@ jobs:
     name: Unit Test
     runs-on: windows-latest
     
-  build:
+  #build:
 
-    runs-on: windows-latest
+    #runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
