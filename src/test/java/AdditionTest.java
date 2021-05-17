@@ -44,8 +44,8 @@ class AdditionTest extends InputTest {
 
         //Act
 
-        calculatorTest.menu.addition();
-        assertFalse(systemOutLog.getLog().contains("Addition"));
+        //calculatorTest.menu.addition();
+        //assertFalse(systemOutLog.getLog().contains("******** Addition ********"));
         //inputTest.scan = new Scanner(new ByteArrayInputStream("MARCUS\n42\n".getBytes()));
 
         //Asserts
