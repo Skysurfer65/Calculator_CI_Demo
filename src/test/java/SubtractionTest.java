@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SubtractionTest extends AdditionTest {
+class SubtractionTest{
     //Class variables and objects
+    Input inputTest = new Input();
     Subtraction subtractionTest;
 
     @Test

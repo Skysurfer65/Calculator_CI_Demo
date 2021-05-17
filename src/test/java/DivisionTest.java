@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DivisionTest extends SubtractionTest {
+class DivisionTest{
     //Class variables and objects
+    Input inputTest = new Input();
     Division divisionTest;
 
     @Test

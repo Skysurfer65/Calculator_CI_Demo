@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TempCalculationsTest extends MultiplicationTest {
+class TempCalculationsTest{
     //Class object
     TempCalculations tempCalculationsTest = new TempCalculations();
 

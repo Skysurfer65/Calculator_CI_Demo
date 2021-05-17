@@ -6,8 +6,9 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AdditionTest extends InputTest {
+class AdditionTest {
     //Class variables and objects
+    Input inputTest = new Input();
     Addition additionTest;
 
     @Test

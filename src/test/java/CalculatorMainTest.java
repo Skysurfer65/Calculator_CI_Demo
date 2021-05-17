@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorMainTest extends TempCalculationsTest{
+class CalculatorMainTest{
     //Class variables and objects
     static CalculatorMainTest packageTest;
-
+/*
     @BeforeAll
     static void beforeAll(){
         packageTest = new CalculatorMainTest();
@@ -42,4 +42,5 @@ class CalculatorMainTest extends TempCalculationsTest{
         packageTest.getUserInputs();
     }
 
+ */
 }

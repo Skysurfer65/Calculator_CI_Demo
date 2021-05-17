@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MultiplicationTest extends DivisionTest {
+class MultiplicationTest{
     //Class variables and objects
+    Input inputTest = new Input();
     Multiplication multiplicationTest = new Multiplication();
 
     @Test
