@@ -25,9 +25,9 @@ jobs:
         distribution: 'adopt'
         
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package
 
     #- name: Maven Package
     #- run: mvn -B clean package -DskipTests
     - name: Maven Verify
-    - run: mvn -B test 
+    - run: mvn -B test --file pom.xml
