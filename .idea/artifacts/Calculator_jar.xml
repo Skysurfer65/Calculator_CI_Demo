@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="Calculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Calculator_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Calculator.jar">
+        <element id="module-output" name="Calculator" />
+      </element>
+      <element id="library" level="project" name="org.junit.vintage:junit-vintage-engine:5.8.0-M1" />
+    </root>
+  </artifact>
+</component>
