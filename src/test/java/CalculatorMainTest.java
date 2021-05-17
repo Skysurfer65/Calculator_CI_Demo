@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorMainTest extends TempCalculationsTest {
+    /*
     //Class variables and objects
     static CalculatorMainTest packageTest;
 
@@ -31,9 +32,10 @@ class CalculatorMainTest extends TempCalculationsTest {
         packageTest.fToCResult();
     }
     @Test
-    @Disabled
     void input(){
         packageTest.getInputString();
         packageTest.parseInput();
     }
+
+     */
 }
