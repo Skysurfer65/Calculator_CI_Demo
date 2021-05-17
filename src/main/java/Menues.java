@@ -22,7 +22,7 @@ public class Menues {
     void invalidInputs(){
         text = "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
         text+= "Invalid inputs, try again....\n";
-        text+= "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
+        text+= "!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
         System.out.println(text);
     }
     void addition(){
