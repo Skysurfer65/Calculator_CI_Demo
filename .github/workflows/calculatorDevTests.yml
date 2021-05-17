@@ -30,5 +30,7 @@ jobs:
       #run: mvn -B package --file pom.xml
     - name: Maven Package
       run: mvn -B clean package -DskipTests
-    - name: Maven Verify
-      run: mvn -B clean verify
+    - name: Run tests with Maven
+      run: mvn -B test --file pom.xml
+    #- name: Maven Verify
+      #run: mvn -B clean verify
