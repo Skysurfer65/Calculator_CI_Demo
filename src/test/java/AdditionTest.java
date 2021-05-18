@@ -33,20 +33,21 @@ class AdditionTest {
 
         inputTest.scan = old;
     }
-
+    /*
     @Test
     void additionMenu(){
         //Arrange
         //additionTest = new Addition();
         //Scanner old = inputTest.scan;
-        CalculatorMain calculatorTest = new CalculatorMain();
+        //CalculatorMain calculatorTest = new CalculatorMain();
+        Menues menu = new Menues();
         SystemOutRule systemOutLog = new SystemOutRule().enableLog();
 
 
         //Act
 
-        //calculatorTest.menu.addition();
-        //assertFalse(systemOutLog.getLog().contains("******** Addition ********"));
+        menu.addition();
+        assertFalse(systemOutLog.getLog().contains("******** Addition ********"));
         //inputTest.scan = new Scanner(new ByteArrayInputStream("MARCUS\n42\n".getBytes()));
 
         //Asserts
@@ -58,4 +59,6 @@ class AdditionTest {
 
         //inputTest.scan = old;
     }
+
+     */
 }

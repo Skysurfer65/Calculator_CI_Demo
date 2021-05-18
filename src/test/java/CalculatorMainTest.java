@@ -7,40 +7,40 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorMainTest{
     //Class variables and objects
-    static CalculatorMainTest packageTest;
-/*
-    @BeforeAll
-    static void beforeAll(){
-        packageTest = new CalculatorMainTest();
-    }
+
 
     //Test arithmetics
     @Test
-    @Disabled
     void addition(){
-        packageTest.addResult();
+        AdditionTest test = new AdditionTest();
+        test.addResult();
     }
     @Test
-    @Disabled
     void subtraction(){
-        packageTest.subResult();
+        SubtractionTest test = new SubtractionTest();
+        test.subResult();
     }
     @Test
-    @Disabled
-    void multiplication() { packageTest.multiResult(); }
+    void division(){
+        DivisionTest test = new DivisionTest();
+        test.divResult();
+    }
     @Test
-    @Disabled
+    void multiplication() {
+        MultiplicationTest test = new MultiplicationTest();
+        test.multiResult();
+    }
+    @Test
     void tempCalculation(){
-        packageTest.cToFResult();
-        packageTest.fToCResult();
+        TempCalculationsTest test = new TempCalculationsTest();
+        test.cToFResult();
+        test.fToCResult();
     }
     @Test
-    @Disabled
     void input(){
-        packageTest.getInputString();
-        packageTest.parseInput();
-        packageTest.getUserInputs();
+        InputTest test = new InputTest();
+        test.getInputString();
+        test.parseInput();
+        test.getUserInputs();
     }
-
- */
 }
