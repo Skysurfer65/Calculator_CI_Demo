@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-// Adding som extra text
+// Adding some extra text
 
 public class Addition {
 
