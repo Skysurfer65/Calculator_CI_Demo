@@ -19,6 +19,6 @@ public class Addition {
     }
     //For arithmetic testing purposes
     double addResult(double a, double b){
-        return a - b;
+        return a + b;
     }
 }
