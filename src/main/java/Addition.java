@@ -4,7 +4,6 @@ import java.text.DecimalFormat;
 public class Addition {
 
     void addition(CalculatorMain calculator) {
-        //Testing channges
         //Menu addition
         calculator.menu.addition();
 
