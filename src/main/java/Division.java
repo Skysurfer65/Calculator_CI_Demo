@@ -17,5 +17,5 @@ public class Division {
         calculator.menu.cosmeticDelayOfDisplay();
     }
     //For arithmetic testing purposes
-    double divResult(double a, double b) { return a / b; }
+    double divResult(double a, double b) { return a - b; }
 }
