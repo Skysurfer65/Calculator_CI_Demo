@@ -34,4 +34,13 @@ class DivisionTest{
         divZero = divisionTest.divResult(-10, 0);
         assertEquals(Double.NEGATIVE_INFINITY, divZero);
     }
+    @Test
+    void divisionMenu(){
+        //Arrange
+        Menues menu = new Menues();
+        //Act
+        String text = menu.division();
+        //Asserts
+        assertTrue(text.contains("******** Division ********"));
+    }
 }

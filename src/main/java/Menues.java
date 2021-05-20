@@ -1,14 +1,14 @@
 public class Menues {
     String text;
 
-    void wellcome(){
+    String wellcome(){
         text = "\n\n*****************************************\n";
         text+= "Wellcome to my calculator and temperature\n";
         text+= "converter!\n";
         text+= "*****************************************\n\n";
-        System.out.print(text);
+        return text;
     }
-    void options(){
+    String options(){
         text = "You can choose from the following options:\n";
         text+= "+ for addition\n- for subtraction\n/ for division\n* for multiplication\n\n";
         text+= "You can also choose a temperature converter\n";
@@ -17,49 +17,49 @@ public class Menues {
         text+= "F for Fahrenheit to Celsius\n\n";
         text+= "If you want to quit write: quit\n";
         text+= "Please type your request: ";
-        System.out.print(text);
+        return text;
     }
-    void invalidInputs(){
-        text = "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
+    String invalidInputs(){
+        text = "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
         text+= "Invalid inputs, try again....\n";
-        text+= "!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
-        System.out.println(text);
+        text+= "!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n";
+        return text;
     }
-    void addition(){
+    String addition(){
         text = "\n******** Addition ********\n";
         text+= "Enter two numbers to add,\n";
         text+= "press enter after each input\n";
-        System.out.print(text);
+        return text;
     }
-    void subtraction(){
+    String subtraction(){
         text = "\n******** Subtraction ********\n";
         text+= "Enter two numbers to subtract,\n";
         text+= "press enter after each input\n";
-        System.out.print(text);
+        return text;
     }
-    void division(){
+    String division(){
         text = "\n******** Division ********\n";
         text+= "Enter two numbers to divide,\n";
         text+= "press enter after each input\n";
-        System.out.print(text);
+        return text;
     }
-    void multiplication(){
+    String multiplication(){
         text = "\n******* Multiplication *******\n";
         text+= "Enter two numbers to multiply,\n";
         text+= "press enter after each input\n";
-        System.out.print(text);
+        return text;
     }
-    void celsiusToFahrenheit(){
+    String celsiusToFahrenheit(){
         text = "\n****** Temp conversions ******\n";
         text+= "Convert degrees of Celsius to\n";
         text+= "degrees of Fahrenheit\n";
-        System.out.print(text);
+        return text;
     }
-    void fahrenheitToCelsius(){
+    String fahrenheitToCelsius(){
         text = "\n****** Temp conversions ******\n";
         text+= "Convert degrees of Fahrenheit to\n";
         text+= "degrees of Celsius\n";
-        System.out.print(text);
+        return text;
     }
     void cosmeticDelayOfDisplay(){
         try {

@@ -88,4 +88,13 @@ class InputTest {
 
         inputTest.scan = old;
     }
+    @Test
+    void invalidInputsMenu(){
+        //Arrange
+        Menues menu = new Menues();
+        //Act
+        String text = menu.invalidInputs();
+        //Asserts
+        assertTrue(text.contains("Invalid"));
+    }
 }

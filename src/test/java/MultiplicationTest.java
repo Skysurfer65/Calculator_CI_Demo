@@ -30,4 +30,13 @@ class MultiplicationTest{
 
         inputTest.scan = old;
     }
+    @Test
+    void multiplicationMenu(){
+        //Arrange
+        Menues menu = new Menues();
+        //Act
+        String text = menu.multiplication();
+        //Asserts
+        assertTrue(text.contains("******* Multiplication *******"));
+    }
 }
