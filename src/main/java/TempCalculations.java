@@ -4,7 +4,7 @@ public class TempCalculations {
     //Fahrenheit  = (Celsius x 1.8) + 32
     void celsiusToFahrenheit(CalculatorMain calculator){
         //Menu Celsius to Fahrenheit
-        calculator.menu.celsiusToFahrenheit();
+        System.out.print(calculator.menu.celsiusToFahrenheit());
 
         //Get user input
         double celsius = 0;
@@ -15,7 +15,7 @@ public class TempCalculations {
                 celsius = calculator.input.parseInput();
                 valid = true;
             } catch (Exception e){
-                calculator.menu.invalidInputs();
+                System.out.print(calculator.menu.invalidInputs());
                 valid = false;
             }
         }while(!valid);
@@ -34,7 +34,7 @@ public class TempCalculations {
 
     void fahrenheitToCelsius(CalculatorMain calculator){
         //Menu Fahrenheit to Celsius
-        calculator.menu.fahrenheitToCelsius();
+        System.out.print(calculator.menu.fahrenheitToCelsius());
 
         //Get user input
         double fahrenheit = 0;
@@ -45,7 +45,7 @@ public class TempCalculations {
                 fahrenheit = calculator.input.parseInput();
                 valid = true;
             } catch (Exception e){
-                calculator.menu.invalidInputs();
+                System.out.print(calculator.menu.invalidInputs());
                 valid = false;
             }
         }while(!valid);

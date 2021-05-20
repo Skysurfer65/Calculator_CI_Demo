@@ -6,10 +6,11 @@ public class CalculatorMain {
 
     public static void main(String[] args) {
         CalculatorMain calculator = new CalculatorMain();
-        calculator.menu.wellcome();
+        System.out.println(calculator.menu.wellcome());
+
         boolean valid = true;
         do {
-            calculator.menu.options();
+            System.out.print(calculator.menu.options());
             calculator.value = calculator.input.getInputString().toUpperCase();
             switch (calculator.value){
                 case "+":

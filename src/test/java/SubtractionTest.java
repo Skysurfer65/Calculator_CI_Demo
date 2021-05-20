@@ -30,4 +30,13 @@ class SubtractionTest{
 
         inputTest.scan = old;
     }
+    @Test
+    void subtractionMenu(){
+        //Arrange
+        Menues menu = new Menues();
+        //Act
+        String text = menu.subtraction();
+        //Asserts
+        assertTrue(text.contains("******** Subtraction ********"));
+    }
 }

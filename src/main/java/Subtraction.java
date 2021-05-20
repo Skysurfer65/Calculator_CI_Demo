@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 public class Subtraction {
     void subtraction(CalculatorMain calculator){
         //Menu subtraction
-        calculator.menu.subtraction();
+        System.out.print(calculator.menu.subtraction());
 
         //Get user inputs
         double[] numbers = calculator.input.getUserInputs(calculator);

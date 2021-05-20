@@ -26,7 +26,7 @@ public class Input {
                a = parseInput();
                 valid = true;
             } catch (NumberFormatException e){
-                calculator.menu.invalidInputs();
+                System.out.print(calculator.menu.invalidInputs());
                 valid = false;
             }
         }while(!valid);
@@ -40,7 +40,7 @@ public class Input {
                     valid = false;
                 }else valid = true;
             } catch (NumberFormatException e){
-                calculator.menu.invalidInputs();
+                System.out.print(calculator.menu.invalidInputs());
                 valid = false;
             }
         }while(!valid);

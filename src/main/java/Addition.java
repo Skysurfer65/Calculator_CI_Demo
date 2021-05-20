@@ -5,7 +5,7 @@ public class Addition {
 
     void addition(CalculatorMain calculator) {
         //Menu addition
-        calculator.menu.addition();
+        System.out.println(calculator.menu.addition());
 
         //Get user inputs
         double[] numbers = calculator.input.getUserInputs(calculator);

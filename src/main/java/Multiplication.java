@@ -1,7 +1,7 @@
 public class Multiplication {
     void multiplication(CalculatorMain calculator){
         //Menu multiplication
-        calculator.menu.multiplication();
+        System.out.print(calculator.menu.multiplication());
 
         //Get user inputs
         double[] numbers = calculator.input.getUserInputs(calculator);

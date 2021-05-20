@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 public class Division {
     void division(CalculatorMain calculator){
         //Menu division
-        calculator.menu.division();
+        System.out.print(calculator.menu.division());
 
         //Get user inputs
         double[] numbers = calculator.input.getUserInputs(calculator);

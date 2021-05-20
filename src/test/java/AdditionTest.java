@@ -33,25 +33,25 @@ class AdditionTest {
 
         inputTest.scan = old;
     }
-    /*
+
     @Test
     void additionMenu(){
         //Arrange
         //additionTest = new Addition();
         //Scanner old = inputTest.scan;
         //CalculatorMain calculatorTest = new CalculatorMain();
+        //SystemOutRule systemOutLog = new SystemOutRule().enableLog();
+
+        //Arrange
         Menues menu = new Menues();
-        SystemOutRule systemOutLog = new SystemOutRule().enableLog();
-
-
         //Act
-
-        menu.addition();
-        assertFalse(systemOutLog.getLog().contains("******** Addition ********"));
-        //inputTest.scan = new Scanner(new ByteArrayInputStream("MARCUS\n42\n".getBytes()));
-
+        String text = menu.addition();
         //Asserts
+        assertTrue(text.contains("******** Addition ********"));
 
+        //() -> { menu.addition(); };
+
+        //inputTest.scan = new Scanner(new ByteArrayInputStream("MARCUS\n42\n".getBytes()));
         //System.exit(1);
         //assertEquals("hello world", systemOutLog.getLog());
         //assertEquals(42, additionTest.numbers[0], "Checking MARCUS");
@@ -59,6 +59,4 @@ class AdditionTest {
 
         //inputTest.scan = old;
     }
-
-     */
 }
